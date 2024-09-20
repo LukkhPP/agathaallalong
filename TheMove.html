@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>Watch! Agatha All Along!</Title>
+        <link rel="stylesheet" href="TMve.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="Pixey2">
+            
+            
+            <div class="spicy">
+                <button class="Back-button" id="Homepage">
+                    Home
+                </button>
+
+                <img src="AAA/Logo.png" class="Titpage">
+
+
+                <script type="text/javascript">
+                    document.getElementById("Homepage").onclick = function () {
+                        location.href = "Index.html";
+                    };
+                </script>
+
+                <div class="displayAAA">
+                    <div class="stream-panel">
+                        
+                        <iframe class="stvids-go" id="videosMid" src="https://mega.nz/embed/5w12mRiK#GO1s7niT6ABQFp7IPoGsFbYWXhS7JtMA-gLRP1U7QfE" allowfullscreen></iframe>
+
+
+                        
+                        <script language="javascript" type="text/javascript"> 
+                            function changevid(buttonlink) { 
+                                document.getElementById('videosMid').src = buttonlink;
+
+                            }
+                            
+                            
+                            function changetxt(buttonlink) {
+                                document.getElementById('eptitles').innerHTML = buttonlink;
+                            }
+
+                        </script>
+
+                    </div>
+    
+                    <div class="left-panel">
+                        <button class="episode1" id="ep1AAA" onClick="changevid('https://mega.nz/embed/5w12mRiK#GO1s7niT6ABQFp7IPoGsFbYWXhS7JtMA-gLRP1U7QfE'), changetxt('Agatha All Along - Episode 1')">
+                            <img src="AAA/Agatha Thumbnail.webp" alt="buttonpng" class="AAAep1">
+                            EP 1
+                        </button>
+
+                        <button class="episode2" id="ep2AAA" onClick="changevid('https://mega.nz/embed/xk0FHZKa#Z7NyaDdxLxQeJrDWXZ0efn4qmhkmmVXMd6eMs9e5Peo'), changetxt('Agatha All Along - Episode 2')">
+                            <img src="AAA/Agatha Thumbnail.webp" alt="buttonpng" class="AAAep1">
+                            EP 2
+                        </button>
+    
+                    </div>
+
+                </div>
+
+                <p class="titleepisode" id="eptitles">
+                    Agatha All Along - Episode 1
+                </p>
+                
+                
+            </div>
+        </div>
+    </body>
+</html>
