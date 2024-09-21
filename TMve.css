@@ -102,11 +102,12 @@ background: none;
     background-color: rgb(203, 170, 224);
     border: none;
     height: 440px;
-    width: 400px;
+    width: 360px;
     margin-left: 40px;
-    margin-right: 40px;
+    margin-right: 50px;
     float:right;
     padding: 0;
+    padding-left: 30px;
     box-shadow: 15px 15px 13px rgba(0, 0, 0, 0.5);
     opacity: 0.8;
 }
