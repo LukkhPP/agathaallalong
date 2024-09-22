@@ -1,6 +1,9 @@
 html{
     scrollbar-width: normal;
     scrollbar-color: rgb(84, 31, 133) rgb(23, 7, 37);
+    height: 100%;
+    display: table;
+    margin: auto;
 }
 
 
@@ -14,18 +17,24 @@ body{
 background-image: url(AAA/Forest.png);
 background-blend-mode: overlay;
 background-color: rgb(38, 12, 63);
- margin: 0px;
- padding: 0px;
+margin: 0px;
+padding: 0px;
+height: 100%;
+display: table-cell;
+vertical-align: top, middle;
+
+
 }
 
 .Pixey{
+    vertical-align: top;
     padding: 0;
     margin: 0;
+
 
 }
 
 .Top-part{ 
-    position: absolute;
     height: 108px; 
     max-height: 108px;
     margin-top: 0px; 
@@ -37,17 +46,24 @@ background-color: rgb(38, 12, 63);
     padding: 0;
     margin: 0;
     box-shadow: 0 5px 13px rgba(0, 0, 0, 0.5);
-    
-
+    padding-left: 574px;
+    padding-right: 574px;
+    margin-top: -20px;
+    margin-bottom: -18px;
 }
 
 .header-name{
+    margin: 0;
+    margin-top: -20px;
+    margin-bottom: -18px;
     font-family: "Covered By Your Grace", cursive;
     font-style: normal;
     color: white;
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 500px;
     text-align: center;
+    width: 200px;
+    padding-top: 40px;
 }
 
 .img-holder{
@@ -65,7 +81,7 @@ background-color: rgb(38, 12, 63);
 .display-img{
     display: block;
     margin: auto;
-    padding-top: 127px;
+    padding-top: 65px;
     padding-bottom: 57px;
     display: block;
   margin-left: auto;
@@ -94,4 +110,14 @@ background-color: rgb(38, 12, 63);
 
 .tweet-button:active{
     opacity: 0.7;
+}
+
+.informant-ep{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color:white;
+    font-family: "Roboto", cursive;
+    font-weight: 400;
+    font-size: 20px;
 }
