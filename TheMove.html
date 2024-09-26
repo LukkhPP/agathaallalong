@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <Title>Watch! Agatha All Along!</Title>
         <link rel="stylesheet" href="TMve.css">
         <link rel="shortcut icon" type="x-icon" href="Icon.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
+
+        
+
     </head>
 
     <body>
+        <input type="hidden" id="ep-drive" aria-placeholder="https://drive.google.com/file/d/1EoqZF6q-3X3hTAB6a_78iExc9wI_zEBU/preview"> </input>
+        <input type="hidden" id="ep-mega" aria-placeholder="https://mega.nz/embed/5w12mRiK#GO1s7niT6ABQFp7IPoGsFbYWXhS7JtMA-gLRP1U7QfE"> </input>
         <div class="Pixey2">
             
             
@@ -23,11 +29,21 @@
 
                 <script type="text/javascript">
                     document.getElementById("Homepage").onclick = function () {
-                        location.href = "index.html";
+                        location.href = "Index.html";
                     };
+                        
+                    
                 </script>
 
-                <div class="displayAAA">
+                <div class="displayAAA" id="buttonContainer">
+                    <button  class="gdrive" id="driveG" >
+                        GDrive Player
+                    </button>
+
+                    <button class="mega" id="megA">
+                        Mega Player
+                    </button>
+
                     <div class="stream-panel">
                         
                         <iframe class="stvids-go" id="videosMid" src="https://mega.nz/embed/5w12mRiK#GO1s7niT6ABQFp7IPoGsFbYWXhS7JtMA-gLRP1U7QfE" allowfullscreen></iframe>
@@ -37,6 +53,7 @@
                         <script language="javascript" type="text/javascript"> 
                             function changevid(buttonlink) { 
                                 document.getElementById('videosMid').src = buttonlink;
+                                
 
                             }
                             
@@ -44,23 +61,52 @@
                             function changetxt(buttonlink) {
                                 document.getElementById('eptitles').innerHTML = buttonlink;
                             }
+                            
+                            //This section down here is for the Gdrive and Mega players Button
+                           
+
+                             function fordrive(buttonlink) {
+                                document.getElementById('ep-drive').ariaPlaceholder = buttonlink;
+
+                             }
+
+                             function formega(buttonlink) {
+                                document.getElementById('ep-mega').ariaPlaceholder = buttonlink;
+
+                             }
+
+                             document.getElementById("driveG").onclick = function changevid2() { 
+                                 const targetframe = document.getElementById('videosMid'); 
+                                 const sourceframe = document.getElementById('ep-drive').ariaPlaceholder;
+
+                                targetframe.src = sourceframe;
+                                
+                             }
+
+                             document.getElementById("megA").onclick = function changevid3() { 
+                                 const targetframe = document.getElementById('videosMid'); 
+                                 const sourceframe = document.getElementById('ep-mega').ariaPlaceholder;
+
+                                targetframe.src = sourceframe;
+                                
+                             }
 
                         </script>
 
                     </div>
     
                     <div class="left-panel">
-                        <button class="episode1" id="ep1AAA" onClick="changevid('https://mega.nz/embed/5w12mRiK#GO1s7niT6ABQFp7IPoGsFbYWXhS7JtMA-gLRP1U7QfE'), changetxt('Agatha All Along - Episode 1')">
+                        <button class="episode1" id="ep1AAA" onClick="changevid('https://mega.nz/embed/5w12mRiK#GO1s7niT6ABQFp7IPoGsFbYWXhS7JtMA-gLRP1U7QfE'), changetxt('Agatha All Along - Episode 1 <i>(Seekest Thou the Road)</i>'), fordrive('https://drive.google.com/file/d/1EoqZF6q-3X3hTAB6a_78iExc9wI_zEBU/preview'), formega('https://mega.nz/embed/5w12mRiK#GO1s7niT6ABQFp7IPoGsFbYWXhS7JtMA-gLRP1U7QfE')">
                             <img src="AAA/Agatha Thumbnail.webp" alt="buttonpng" class="AAAep1">
                             EP 1
                         </button>
 
-                        <button class="episode2" id="ep2AAA" onClick="changevid('https://mega.nz/embed/xk0FHZKa#Z7NyaDdxLxQeJrDWXZ0efn4qmhkmmVXMd6eMs9e5Peo'), changetxt('Agatha All Along - Episode 2')">
+                        <button class="episode2" id="ep2AAA" onClick="changevid('https://mega.nz/embed/xk0FHZKa#Z7NyaDdxLxQeJrDWXZ0efn4qmhkmmVXMd6eMs9e5Peo'), changetxt('Agatha All Along - Episode 2 <i>(Circle Sewn with Fate / Unlock Thy Hidden Gate)</i>'), fordrive('https://drive.google.com/file/d/1fLQOMeVxudAwQSHQ9r5kzc0Ql7WFIom4/preview'), formega('https://mega.nz/embed/xk0FHZKa#Z7NyaDdxLxQeJrDWXZ0efn4qmhkmmVXMd6eMs9e5Peo')">
                             <img src="AAA/Agatha Thumbnail.webp" alt="buttonpng" class="AAAep2">
                             EP 2
                         </button>
 
-                        <button class="episode3" id="ep3AAA" onClick=" ">
+                        <button class="episode3" id="ep3AAA" onClick="changevid('https://mega.nz/embed/J98w2DQR#V8kVR9XnRA9V7jg-ohLMImLGtUy7KU1MP0GPyrmIuzg'), changetxt('Agatha All Along - Episode 3 <i>(Through Many Miles / Of Tricks and Trials)</i>'), fordrive('https://drive.google.com/file/d/1qmqcYuzJoEDGwyFlKU8wB0C-d6ikxvmG/preview'), formega('https://mega.nz/embed/J98w2DQR#V8kVR9XnRA9V7jg-ohLMImLGtUy7KU1MP0GPyrmIuzg')">
                             <img src="AAA/Agatha Thumbnail.webp" alt="buttonpng" class="AAAep3">
                             EP 3
                         </button>
@@ -101,7 +147,7 @@
                 </div>
 
                 <p class="titleepisode" id="eptitles">
-                    Agatha All Along - Episode 1
+                    Agatha All Along - Episode 1 <i>(Seekest Thou the Road)</i>
                 </p>
                 
                 
